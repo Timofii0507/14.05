@@ -1,0 +1,53 @@
+﻿<Window x:Class="_14._05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_14._05"
+        mc:Ignorable="d"
+        Title="Game Library" Height="600" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBox x:Name="TitleTextBox" Width="200" Margin="5"/>
+                <TextBlock Text="Title" Margin="5,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="DeveloperTextBox" Width="200" Margin="5"/>
+                <TextBlock Text="Developer" Margin="5,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="GenreTextBox" Width="200" Margin="5"/>
+                <TextBlock Text="Genre" Margin="5,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"/>
+            </StackPanel>
+            <DatePicker x:Name="ReleaseDatePicker" Width="200" Margin="5"/>
+            <StackPanel>
+                <TextBox x:Name="GameModeTextBox" Width="200" Margin="5"/>
+                <TextBlock Text="Game Mode" Margin="5,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="CopiesSoldTextBox" Width="200" Margin="5"/>
+                <TextBlock Text="Copies Sold" Margin="5,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"/>
+            </StackPanel>
+            <Button Content="Add Game" Click="AddGameButton_Click" Margin="5"/>
+
+            <StackPanel>
+                <TextBox x:Name="SearchTextBox" Width="200" Margin="5"/>
+                <TextBlock Text="Search" Margin="5,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"/>
+            </StackPanel>
+            <Button Content="Search by Title" Click="SearchByTitleButton_Click" Margin="5"/>
+            <Button Content="Search by Developer" Click="SearchByDeveloperButton_Click" Margin="5"/>
+            <Button Content="Search by Title and Developer" Click="SearchByTitleAndDeveloperButton_Click" Margin="5"/>
+            <Button Content="Search by Genre" Click="SearchByGenreButton_Click" Margin="5"/>
+            <Button Content="Search by Release Year" Click="SearchByReleaseYearButton_Click" Margin="5"/>
+            <Button Content="Single Player Games" Click="SinglePlayerGamesButton_Click" Margin="5"/>
+            <Button Content="Multiplayer Games" Click="MultiplayerGamesButton_Click" Margin="5"/>
+            <Button Content="Game with Max Copies Sold" Click="MaxCopiesSoldGameButton_Click" Margin="5"/>
+            <Button Content="Game with Min Copies Sold" Click="MinCopiesSoldGameButton_Click" Margin="5"/>
+            <Button Content="Top 3 Popular Games" Click="Top3PopularGamesButton_Click" Margin="5"/>
+            <Button Content="Top 3 Unpopular Games" Click="Top3UnpopularGamesButton_Click" Margin="5"/>
+
+            <ListBox x:Name="GamesListBox" Width="200" Height="200" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
